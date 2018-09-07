@@ -7,15 +7,15 @@ import java.util.concurrent.*;
 public class Test {
 
     public static void main(String[] args) throws Exception{
-//        startIndexing();
+        startIndexing();
 //        timeTasks();
 //        semaphore();
 //        cyclic();
-        test();
+//        test();
     }
 
-    private static final int QUEUE_SIZE = 20;
-    private static final int CONDUMERS = 10;
+    private static final int QUEUE_SIZE = 5;
+    private static final int CONDUMERS = 2;
 
     /**
      * 生产者与消费者
