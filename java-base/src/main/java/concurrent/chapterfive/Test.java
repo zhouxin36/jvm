@@ -7,10 +7,10 @@ import java.util.concurrent.*;
 public class Test {
 
     public static void main(String[] args) throws Exception{
-        startIndexing();
+//        startIndexing();
 //        timeTasks();
 //        semaphore();
-//        cyclic();
+        cyclic();
 //        test();
     }
 
@@ -89,6 +89,7 @@ public class Test {
                 try {
                     System.out.println("hehe"+(j+1));
                     cyclicBarrier.await();
+                    System.out.println("呵呵哒的 啊");
                 }catch (Exception e){
                     e.printStackTrace();
                 }
