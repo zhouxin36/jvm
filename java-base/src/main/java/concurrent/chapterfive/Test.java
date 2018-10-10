@@ -10,7 +10,7 @@ public class Test {
 //        startIndexing();
 //        timeTasks();
 //        semaphore();
-        cyclic();
+//        cyclic();
 //        test();
     }
 

@@ -7,6 +7,7 @@ public class Test {
 
     private void set() {
         longLocal.set(Thread.currentThread().getId());
+        Thread.currentThread().setName("thread+"+System.nanoTime());
         stringLocal.set(Thread.currentThread().getName());
     }
 

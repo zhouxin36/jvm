@@ -20,6 +20,7 @@ public class Test {
         executor.execute(()->
             System.out.println("hehe")
         );
+        ((ExecutorService) executor).shutdown();
     }
 
     /**
@@ -61,8 +62,8 @@ public class Test {
             int j = i;
             stringExecutorCompletionService.submit(()-> {
                 String str = "呵呵" + j;
-                System.out.println(str);
                 Thread.sleep(100*(10-j));
+                System.out.println(str);
                 return str;
             });
         }
